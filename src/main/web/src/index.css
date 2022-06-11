@@ -16,7 +16,7 @@ code {
   --bg: #242526;
   --bg-accent: #484a4d;
   --text-color: #dadce1;
-  --nav-size: 80px;
+  --nav-size: 60px;
   --border : 1px solid #474a4d;
   --speed: 500ms;
 }
@@ -69,4 +69,149 @@ a {
 
 .icon-button:hover {
   filter: brightness(1.2);
+}
+
+.dropdown {
+  position: absolute;
+  top: 58px;
+  width: 300px;
+  transform: translateX(45%);
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  overflow: hidden;
+
+  transition: height var(--speed) ease;
+}
+
+.menu-item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  transition: background var(--speed);
+  padding: 0.5rem;
+}
+
+.menu-item:hover {
+  background-color: #525357;
+}
+
+.icon-right {
+  margin-left: auto;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+
+.menu-primary-exit {
+  position: absolute;
+}
+
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
+}
+
+.menu-secondary-enter {
+  position: absolute;
+  transform: translateX(110%);
+}
+
+.menu-secondary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+
+.menu-secondary-exit {
+  position: absolute;
+}
+
+.menu-secondary-exit-active {
+  transform: translateX(110%);
+  transition: all var(--speed) ease;
+}
+
+#container {
+  margin: 100px auto;
+  width: 688px;
+}
+   
+#keyboard {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+   
+#keyboard li {
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: rgb(16, 61, 61);
+  color:rgb(202, 224, 224);
+  border: 1px solid #0e332d;
+  border-radius: 5px;
+}
+       
+.capslock, .tab, .left-shift {
+  clear: left;
+}
+           
+#keyboard .tab, #keyboard .delete {
+  width: 70px;
+}
+               
+#keyboard .capslock {
+  width: 80px;
+}
+               
+#keyboard .return {
+  width: 77px;
+}
+               
+#keyboard .left-shift {
+  width: 95px;
+}
+               
+#keyboard .right-shift {
+  width: 109px;
+}
+               
+.lastitem {
+  margin-right: 0;
+}
+           
+.uppercase {
+  text-transform: uppercase;
+}
+           
+#keyboard .space {
+  clear: left;
+  width: 681px;
+}
+           
+.on {
+  display: none;
+}
+           
+#keyboard li:hover {
+  position: relative;
+  border-color: #24858b;
+  cursor: pointer;
+  transition: border-color var(--speed) ease;
 }
