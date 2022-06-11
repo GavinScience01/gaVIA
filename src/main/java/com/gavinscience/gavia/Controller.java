@@ -25,6 +25,7 @@ public class Controller implements Initializable {
     }
 
     public void load() {
-        engine.load("https://ga-via.vercel.app/");
+        //engine.load("https://ga-via.vercel.app/");
+        engine.load("locahost:3000");
     }
 }

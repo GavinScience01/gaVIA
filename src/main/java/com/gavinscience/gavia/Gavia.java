@@ -14,6 +14,8 @@ public class Gavia extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
         stage.setTitle("GaVIA");
         stage.setScene(scene);
+        stage.setResizable(true);
+        stage.setMaximized(true);
         stage.show();
     }
 
