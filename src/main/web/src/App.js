@@ -6,9 +6,9 @@ import { ReactComponent as LightIcon } from './icons/light.svg';
 function App() {
     return (
         <NavBar>
-            <NavItem icon={<KeyboardIcon />}></NavItem>
-            <NavItem icon={<MouseIcon />}></NavItem>
-            <NavItem icon={<LightIcon />}></NavItem>
+            <NavItem icon="⌨️"></NavItem>
+            <NavItem icon="🖱️"></NavItem>
+            <NavItem icon="🚦"></NavItem>
         </NavBar>
     );
 }
