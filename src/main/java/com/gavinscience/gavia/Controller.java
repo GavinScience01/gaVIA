@@ -25,6 +25,6 @@ public class Controller implements Initializable {
     }
 
     public void load() {
-        engine.load("F:/Projects/GaVIA/src/main/java/com/gavinscience/gavia/web/index.html");
+        engine.load("https://ga-via.vercel.app/");
     }
 }
